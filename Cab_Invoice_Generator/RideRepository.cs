@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cab_Invoice_Generator
 {
-    public class RideRepository
+    public  class RideRepository
     {
         Dictionary<string, List<Ride>> userRides = null;
 
@@ -44,5 +44,7 @@ namespace Cab_Invoice_Generator
                 throw new CabInvoiceException(CabInvoiceException.ExceptionType.INVALID_USER_ID, "Invalid UserID");
             }
         }
+
+       
     }
 }
